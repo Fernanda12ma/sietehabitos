@@ -1,0 +1,140 @@
+.barra
+{
+background-color: rgb(219, 176, 150);
+}
+
+.barra ul
+{
+list-style: none;
+}
+
+.barra ul li
+{
+    display: inline-block;
+}
+
+.barra ul li a 
+{
+    text-decoration: none;
+    display: block;
+    color:  rgb(248, 248, 248);
+    padding: 10px;
+}
+.barra ul li a:hover
+{
+background-color:rgb(133, 230, 250);;
+}
+
+.barra ul li a
+{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 20px;
+}
+h1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+}
+h2
+{
+    font-family: 'Mali', cursive;
+    font-size: 45px;
+}
+p
+{
+    font-family: 'Andika New Basic', sans-serif;
+    font-size: 20px;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:  rgb(238, 201, 200);
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+
+.contenedor > div{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .header{
+    background-color: rgb(192, 90, 90);
+    color: rgb(255, 255, 255);
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.contenedor .contenido {
+    grid-column: span 2;
+    background-color: rgb(221, 122, 138);
+}
+
+.contenedor .sidebar {
+    background-color: rgb(221, 129, 129);
+    grid-row: span 2;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+    background-color: rgb(48, 99, 94);
+    color: rgb(255, 255, 255);
+}
+
+.contenedor .footer {
+    background-color: rgb(46, 138, 122);
+    color: rgb(254, 255, 255);
+    grid-column: span 3;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: rgb(197, 193, 193);
+
+    }
+
+    .contenedor .contenido {
+        grid-column: 1/ -1;
+    }
+    
+    .contenedor .sidebar{
+        grid-column:  1/ -1;
+    }
+
+    .contenedor .widget-1{
+        grid-column: span 2;
+    }
+    }
+
+    p{
+        color: white;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+    h1{
+        color: white;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    h3{
+        color: white;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    h2{
+        font-family: 'Oswald', sans-serif;
+    }
